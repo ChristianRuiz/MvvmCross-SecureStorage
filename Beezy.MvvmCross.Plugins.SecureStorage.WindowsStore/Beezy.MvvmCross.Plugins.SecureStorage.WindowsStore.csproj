@@ -104,6 +104,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="packages.config" />
+    <None Include="SecureStoragePluginBootstrap.cs.pp" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MvxStoreProtectedData.cs" />

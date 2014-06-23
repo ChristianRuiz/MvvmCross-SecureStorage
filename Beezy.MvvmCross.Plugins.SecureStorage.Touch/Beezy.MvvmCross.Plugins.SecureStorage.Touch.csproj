@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SecureStoragePluginBootstrap.cs.pp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
