@@ -16,15 +16,11 @@ namespace Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone
     {
         public void Protect(string key, string value)
         {
-            try
-            {
-                var valueByte = Encoding.UTF8.GetBytes(value);
+            var valueByte = Encoding.UTF8.GetBytes(value);
 
-                var protectedValueByte = ProtectedData.Protect(valueByte, null);
+            var protectedValueByte = ProtectedData.Protect(valueByte, null);
 
-                WriteValueToFile(key, protectedValueByte);
-            }
-            catch { }
+            WriteValueToFile(key, protectedValueByte);
         }
 
         public string Unprotect(string key)
@@ -45,13 +41,9 @@ namespace Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone
 
         public void Remove(string key)
         {
-            try
-            {
-                var file = IsolatedStorageFile.GetUserStoreForApplication();
+            var file = IsolatedStorageFile.GetUserStoreForApplication();
 
-                file.DeleteFile(key);
-            }
-            catch { }
+            file.DeleteFile(key);
         }
 
         private void WriteValueToFile(string key, byte[] protectedValueByte)
@@ -69,17 +61,17 @@ namespace Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone
 
         private byte[] ReadValueFromFile(string key)
         {
-                var file = IsolatedStorageFile.GetUserStoreForApplication();
+            var file = IsolatedStorageFile.GetUserStoreForApplication();
 
-                using (var isolatedStorageFileStream = new IsolatedStorageFileStream(key, FileMode.Open, FileAccess.Read, file))
+            using (var isolatedStorageFileStream = new IsolatedStorageFileStream(key, FileMode.Open, FileAccess.Read, file))
+            {
+                using (var reader = new StreamReader(isolatedStorageFileStream).BaseStream)
                 {
-                    using (var reader = new StreamReader(isolatedStorageFileStream).BaseStream)
-                    {
-                        var valueArray = new byte[reader.Length];
-                        reader.Read(valueArray, 0, valueArray.Length);
-                        return valueArray;
-                    }
+                    var valueArray = new byte[reader.Length];
+                    reader.Read(valueArray, 0, valueArray.Length);
+                    return valueArray;
                 }
+            }
         }
 
     }
