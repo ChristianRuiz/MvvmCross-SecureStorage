@@ -3,7 +3,6 @@
 // MvvmCross - Secure Storage Plugin is licensed using Microsoft Public License (Ms-PL)
 // 
 
-using System.Threading.Tasks;
 namespace Beezy.MvvmCross.Plugins.SecureStorage
 {
     public interface IMvxProtectedData
