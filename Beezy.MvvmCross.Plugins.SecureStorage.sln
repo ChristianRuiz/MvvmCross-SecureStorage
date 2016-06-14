@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beezy.MvvmCross.Plugins.Sec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beezy.MvvmCross.Plugins.SecureStorage.Droid", "Beezy.MvvmCross.Plugins.SecureStorage.Droid\Beezy.MvvmCross.Plugins.SecureStorage.Droid.csproj", "{46DF466D-F7D9-4833-A112-5383CE2943AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beezy.MvvmCross.Plugins.SecureStorage.Touch", "Beezy.MvvmCross.Plugins.SecureStorage.Touch\Beezy.MvvmCross.Plugins.SecureStorage.Touch.csproj", "{986D1130-0344-42D3-A927-2AFA2E4908C3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone", "Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone\Beezy.MvvmCross.Plugins.SecureStorage.WindowsPhone.csproj", "{062469D9-2A86-4963-AC7C-83643C592EAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beezy.MvvmCross.Plugins.SecureStorage.WindowsStore", "Beezy.MvvmCross.Plugins.SecureStorage.WindowsStore\Beezy.MvvmCross.Plugins.SecureStorage.WindowsStore.csproj", "{57B21322-6EAB-403F-9495-B6FB366276E8}"
@@ -18,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Beezy.MvvmCross.Plugins.SecureStorage.Touch", "Beezy.MvvmCross.Plugins.SecureStorage.Touch\Beezy.MvvmCross.Plugins.SecureStorage.Touch.csproj", "{619D75BC-0471-4643-95E1-A5E92531B44A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,16 +51,6 @@ Global
 		{46DF466D-F7D9-4833-A112-5383CE2943AF}.Release|ARM.ActiveCfg = Release|Any CPU
 		{46DF466D-F7D9-4833-A112-5383CE2943AF}.Release|x64.ActiveCfg = Release|Any CPU
 		{46DF466D-F7D9-4833-A112-5383CE2943AF}.Release|x86.ActiveCfg = Release|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Release|ARM.ActiveCfg = Release|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Release|x64.ActiveCfg = Release|Any CPU
-		{986D1130-0344-42D3-A927-2AFA2E4908C3}.Release|x86.ActiveCfg = Release|Any CPU
 		{062469D9-2A86-4963-AC7C-83643C592EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{062469D9-2A86-4963-AC7C-83643C592EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062469D9-2A86-4963-AC7C-83643C592EAE}.Debug|ARM.ActiveCfg = Debug|ARM
@@ -91,6 +81,22 @@ Global
 		{57B21322-6EAB-403F-9495-B6FB366276E8}.Release|x64.Build.0 = Release|x64
 		{57B21322-6EAB-403F-9495-B6FB366276E8}.Release|x86.ActiveCfg = Release|x86
 		{57B21322-6EAB-403F-9495-B6FB366276E8}.Release|x86.Build.0 = Release|x86
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|x64.Build.0 = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Debug|x86.Build.0 = Debug|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|ARM.Build.0 = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|x64.ActiveCfg = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|x64.Build.0 = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|x86.ActiveCfg = Release|Any CPU
+		{619D75BC-0471-4643-95E1-A5E92531B44A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

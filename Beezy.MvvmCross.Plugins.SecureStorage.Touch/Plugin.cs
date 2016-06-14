@@ -3,8 +3,8 @@
 // MvvmCross - Secure Storage Plugin is licensed using Microsoft Public License (Ms-PL)
 // 
 
-using Cirrious.CrossCore;
-using Cirrious.CrossCore.Plugins;
+using MvvmCross.Platform.Plugins;
+using MvvmCross.Platform;
 
 namespace Beezy.MvvmCross.Plugins.SecureStorage.Touch
 {
